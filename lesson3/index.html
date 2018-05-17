@@ -12,17 +12,17 @@
 	<script type="text/babel">
 		class HelloWorld extends React.Component {
 			render(){
-				return <p>Hello, World!</p>
+				return <p>Hello, {this.props.greetTarget}!</p>
 			}
 		}
 
 		ReactDOM.render(
 			<div>
-				<HelloWorld/>
-				<HelloWorld/>
-				<HelloWorld/>
-				<HelloWorld/>
-				<HelloWorld/>
+				<HelloWorld greetTarget="Katie"/>
+				<HelloWorld greetTarget="Luna"/>
+				<HelloWorld greetTarget="Beatrice"/>
+				<HelloWorld greetTarget="Sully"/>
+				<HelloWorld greetTarget="Chris"/>
 			</div>,
 			document.querySelector("#container")
 		);
